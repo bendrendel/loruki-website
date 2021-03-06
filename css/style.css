@@ -113,6 +113,20 @@ img {
     outline: none;
 }
 
+.showcase::after {
+    content: '';
+    background-color: #fff;
+    height: 120px;
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    left: 0;
+    transform: skewY(-4deg);
+    -webkit-transform: skewY(-4deg);
+    -moz-transform: skewY(-4deg);
+    -ms-transform: skewY(-4deg);
+}
+
 /* Utilities */
 .container {
     max-width: 1100px;
