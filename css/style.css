@@ -102,6 +102,7 @@ code, pre {
     top: 60px;
     height: 350px;
     width: 400px;
+    max-width: 100%;
     padding: 40px;
     z-index: 100;
     justify-self: end;
@@ -259,7 +260,9 @@ code, pre {
     .showcase .grid,
     .stats .grid,
     .cli .grid,
-    .cloud .grid {
+    .cloud .grid,
+    .features-main .grid,
+    .docs-main .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
@@ -281,6 +284,22 @@ code, pre {
     .cli .grid > *:first-child {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
+    }
+
+    .features-head,
+    .features-sub-head,
+    .docs-head {
+        text-align: center;
+    }
+
+    .features-head img,
+    .features-sub-head img,
+    .docs-head img {
+        justify-self: center;
+    }
+
+    .features-main .grid .card {
+        grid-column: 1 / 2;
     }
 }
 
