@@ -97,6 +97,10 @@ code, pre {
     overflow: visible;
 }
 
+.showcase-text {
+    animation: slideInFromLeft 1s ease-in;
+}
+
 .showcase-form {
     position: relative;
     top: 60px;
@@ -106,6 +110,7 @@ code, pre {
     padding: 40px;
     z-index: 100;
     justify-self: end;
+    animation: slideInFromRight 1s ease-in;
 }
 
 .showcase-form .form-control {
@@ -142,6 +147,7 @@ code, pre {
 /* Stats */
 .stats {
     padding-top: 100px;
+    animation: slideInFromBottom 1s ease-in;
 }
 
 .stats-heading {
@@ -159,6 +165,10 @@ code, pre {
 }
 
 /* Cli */
+.cli {
+    animation: slideInFromBottom 1s ease-in;
+}
+
 .cli .grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -170,6 +180,10 @@ code, pre {
 }
 
 /* Cloud */
+.cloud {
+    animation: slideInFromBottom 1s ease-in;
+}
+
 .cloud .grid {
     grid-template-columns: 4fr 3fr;
 }
@@ -252,6 +266,47 @@ code, pre {
 .footer .social a {
     display: inline-block;
     margin: 10px 10px;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-150%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(150%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-150%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(150%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 /* Tablets and under */
