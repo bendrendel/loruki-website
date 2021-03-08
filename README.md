@@ -1,7 +1,7 @@
 # Loruki Website
 
 ## Introduction
-This project is a complete website for a fictional cloud hosting company.
+This project is a complete website for a fictional cloud hosting company.  The site is deployed at https://hopeful-torvalds-8456b1.netlify.app/.
 
 ## Technologies
 This project uses HTML, CSS, and vanilla JS.
